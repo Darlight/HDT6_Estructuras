@@ -11,18 +11,18 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class MapFactory{
-    public Map<String,String> getMap(String map){
+    public Map<K,V> getMap(String map){
         if (map == null){
             return null;
         }
         else if(map.equals("HashMap")){
-            return new HashMap<String,String>();
+            return new HashMap<K,V>();
         }
         else if(map.equals("TreeMap")){
-            return new TreeMap<String,String>();
+            return new TreeMap<K,V>();
         }
         else if(map.equals("LinkedHashMap")){
-            return new LinkedHashMap<String,String>();
+            return new LinkedHashMap<K,V>();
         }
         return	null;
     }
