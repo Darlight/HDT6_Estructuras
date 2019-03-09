@@ -10,7 +10,7 @@ pues el unico metodo que tiene es ese precisamente.
 //Se importan las librerias necesarias.
 import java.io.*;
 
-public class Archivos {
+public class Archivo {
 
     //Metodo encargado de leer archivos de texto
     //Recibe como parametro la direccion en la que se encuentra

@@ -10,9 +10,9 @@ public class Carta{
     private String nombre;
     private String tipo;
 
-    public Card(String nombre, String tipo){
-        this.nombre = name;
-        this.tipo = type;
+    public Carta(String nombre, String tipo){
+        this.nombre = nombre;
+        this.tipo = tipo;
     }
 
     public String getTipo(){

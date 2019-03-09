@@ -5,28 +5,24 @@ Autores:    Mario Perdomo 18029
 Fecha: 8 de Marzo de 2019
 Proposito: Clase de la coleccion
  */
-import java.util.HashMap;
-import java.util.Map;
-import java.util.ArrayList;
-import java.util.TreeMap;
-import java.util.LinkedHashMap;
+import java.util.*;
 
-public class Coleccion{
-    private MapFactory mapa = new MapFactory();
+public class Coleccion {
+    private MapFactory creador_mapa = new MapFactory();
     private Map<String,Carta> baraja;
     private Map<String,Carta> mano;
 
-    public Coleccion(String mapa){
-        this.baraja = mapa.getMap(mapa);
-        this.mano = mapa.getMap(mapa);
-
+    public Coleccion(String mapa) {
+        // Constructor
+        this.baraja = creador_mapa.getMap(mapa);
+        this.mano = creador_mapa.getMap(mapa);
     }
 
-    public Map<String,Card> getBaraja() {
+    public Map<String,Carta> getBaraja() {
         return baraja;
     }
 
-    public Map<String,Card> getMano() {
+    public Map<String,Carta> getMano() {
         return mano;
     }
-    
+}

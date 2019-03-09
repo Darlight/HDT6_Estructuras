@@ -5,12 +5,8 @@ Autores:    Mario Perdomo 18029
 Fecha: 8 de Marzo de 2019
 Proposito: Factory que instancia el tipo de Mapa a utilizar
  */
-import java.util.HashMap;
-import java.util.TreeMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
-
-public class MapFactory{
+import java.util.*;
+public class MapFactory<K,V>{
     public Map<K,V> getMap(String map){
         if (map == null){
             return null;
